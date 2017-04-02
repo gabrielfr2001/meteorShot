@@ -1,5 +1,6 @@
 package ds;
 
+import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontMetrics;
@@ -25,9 +26,10 @@ public class Painter extends JPanel implements KeyListener, Runnable {
 
 	private static final long serialVersionUID = 4073472496026368671L;
 
+	private static final double HEALTH = 5000;
+
 	static List<Meteor> meteors = new ArrayList<>();
 
-	private int frames;
 	private String pressed = "";
 	private String pressedDisp = "";
 	private int countDown;
@@ -41,7 +43,9 @@ public class Painter extends JPanel implements KeyListener, Runnable {
 	private Image BACKGROUND;
 	private Image LANDSCAPE;
 	public static Font font = new Font("Tahoma", Font.BOLD, 35);
+	public static Font font4 = new Font("Tahoma", Font.BOLD, 20);
 	private static Font font2 = new Font("Tahoma", Font.BOLD, 45);
+	private static Font font3 = new Font("Tahoma", Font.BOLD, 100);
 	private List<Thread> threads = new ArrayList<>();
 	private int levelUp;
 	private int pontosUp;
@@ -53,6 +57,13 @@ public class Painter extends JPanel implements KeyListener, Runnable {
 	private int choices = 5;
 	private boolean actualize = true;
 	private String[] ind;
+	private BufferedImage HEART;
+	private BufferedImage SHIP;
+	public boolean GAMEOVER;
+	private BufferedImage DANO;
+	private int overMatrix;
+	private int overString;
+	private int overButton1;
 	static boolean add = true;
 	static double health;
 	static boolean cando = true;
@@ -71,7 +82,29 @@ public class Painter extends JPanel implements KeyListener, Runnable {
 		LANDSCAPE = resize(toBufferedImage(loadImage("earth.png")), width, height);
 		System.out.println(LANDSCAPE);
 
-		health = 10000;
+		HEART = resize(toBufferedImage(loadImage("heart.png")), 64, 36);
+		System.out.println(HEART);
+
+		SHIP = resize(toBufferedImage(loadImage("nave.png")), width, height);
+		System.out.println(SHIP);
+
+		DANO = dye(toBufferedImage(SHIP), new Color(100, 0, 0));
+		System.out.println(DANO);
+
+		health = HEALTH;
+	}
+
+	private static BufferedImage dye(BufferedImage image, Color color) {
+		int w = image.getWidth();
+		int h = image.getHeight();
+		BufferedImage dyed = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
+		Graphics2D g = dyed.createGraphics();
+		g.drawImage(image, 0, 0, null);
+		g.setComposite(AlphaComposite.SrcAtop);
+		g.setColor(color);
+		g.fillRect(0, 0, w, h);
+		g.dispose();
+		return dyed;
 	}
 
 	public void paint(Graphics g) {
@@ -87,74 +120,76 @@ public class Painter extends JPanel implements KeyListener, Runnable {
 		p.setColor(Color.BLACK);
 		p.setFont(font);
 		Random r = new Random();
-		if (meteors.size() < 10 && add) {
-			String statement = "";
-			int n1 = r.nextInt(level + 1) + 1;
-			int n2 = r.nextInt(level + 1) + 1;
+		if (!GAMEOVER) {
+			if (meteors.size() < 10 && add) {
+				String statement = "";
+				int n1 = r.nextInt(level + 1) + 1;
+				int n2 = r.nextInt(level + 1) + 1;
 
-			statement += n1;
-			statement += " x ";
-			statement += n2;
+				statement += n1;
+				statement += " x ";
+				statement += n2;
 
-			int size = (int) 150;
-			Meteor meteor = new Meteor(new Random().nextInt(width - size * 2), -size * 1.5, statement, size);
-			meteor.n1 = n1;
-			meteor.n2 = n2;
-			meteor.image = resize(toBufferedImage(Meteor.IMAGE), size, size);
-			meteor.speed = (Math.random() * 0.5 + 0.6);
-			add = false;
+				int size = (int) 150;
+				Meteor meteor = new Meteor(new Random().nextInt(width - size * 2), -size * 1.5, statement, size);
+				meteor.n1 = n1;
+				meteor.n2 = n2;
+				meteor.image = resize(toBufferedImage(Meteor.IMAGE), size, size);
+				meteor.speed = (Math.random() * 0.5 + 0.6);
+				add = false;
 
-			meteors.add(meteor);
-			actualize = true;
-		}
-		if (!pressed.equals("") && meteors.size() > 0)
-			if (cando)
-				if (meteors.get(0).n1 * meteors.get(0).n2 == Integer.parseInt(pressed)) {
-					Thread thread = new Thread(new Threader(meteors.get(0), Threader.KILL));
+				meteors.add(meteor);
+				actualize = true;
+			}
+			if (!pressed.equals("") && meteors.size() > 0)
+				if (cando)
+					if (meteors.get(0).n1 * meteors.get(0).n2 == Integer.parseInt(pressed)) {
+						Thread thread = new Thread(new Threader(meteors.get(0), Threader.KILL));
+						threads.add(thread);
+						thread.start();
+						acertou = 10;
+						pressedDisp = "";
+						pressed = "";
+						addPontos = (int) (height - 100 - meteors.get(0).y) * multiplier;
+
+						int ponto = (int) (addPontos * param);
+						int var = 0;
+
+						while (ponto != 0) {
+							ponto /= param;
+							var += ponto;
+						}
+
+						addic += addPontos * param - var / 2;
+						// pontos += addPontos;
+						pontosUp += addPontos;
+						cando = false;
+						level++;
+						levelUp = 50;
+					}
+			for (int i = 0; i < meteors.size(); i++) {
+				Meteor m = meteors.get(i);
+				if (m.y > height - m.size - 240) {
+					Thread thread = new Thread(new Threader(m, Threader.EXPLODE));
 					threads.add(thread);
 					thread.start();
-					acertou = 10;
+					errou = 10;
 					pressedDisp = "";
 					pressed = "";
-					addPontos = (int) (height - 100 - meteors.get(0).y) * multiplier;
-
-					int ponto = (int) (addPontos * param);
-					int var = 0;
-
-					while (ponto != 0) {
-						ponto /= param;
-						var += ponto;
-					}
-
-					addic += addPontos * param - var / 2;
-					// pontos += addPontos;
-					pontosUp += addPontos;
-					cando = false;
-					level++;
-					levelUp = 50;
+					Thread t = new Thread(new HealthKiller(1000, 20));
+					t.start();
+					threads.add(t);
 				}
-		for (int i = 0; i < meteors.size(); i++) {
-			Meteor m = meteors.get(i);
-			if (m.y > height - 100) {
-				Thread thread = new Thread(new Threader(m, Threader.EXPLODE));
-				threads.add(thread);
-				thread.start();
-				errou = 10;
-				pressedDisp = "";
-				pressed = "";
-				Thread t = new Thread(new HealthKiller(1000, 20));
-				t.start();
-				threads.add(t);
+				double angle = getAngle(new Point((int) m.x, (int) m.y),
+						new Point((int) (width / 2 - m.size), (int) (height * 1.5)));
+
+				m.x += m.speed * Math.cos(angle);
+				m.vx = m.speed * Math.cos(angle);
+				m.y += m.speed * Math.sin(angle);
+				m.vy = m.speed * Math.sin(angle);
+
+				m.paint(p);
 			}
-			double angle = getAngle(new Point((int) m.x, (int) m.y),
-					new Point((int) (width / 2 - m.size), (int) (height * 1.5)));
-
-			m.x += m.speed * Math.cos(angle);
-			m.vx = m.speed * Math.cos(angle);
-			m.y += m.speed * Math.sin(angle);
-			m.vy = m.speed * Math.sin(angle);
-
-			m.paint(p);
 		}
 
 		p.setColor(Color.BLACK);
@@ -168,6 +203,9 @@ public class Painter extends JPanel implements KeyListener, Runnable {
 		p.drawString("LVL " + NumberFormat.getNumberInstance(Locale.US).format(level + 1), 10, font2.getSize() * 2);
 		p.setColor(new Color(0, 255, 0, levelUp * 5));
 
+		if (health <= 0) {
+			GAMEOVER = true;
+		}
 		p.drawString("+1", 150, font2.getSize() * 2 + levelUp / 3 - 50 / 3);
 
 		int color = 0;
@@ -197,18 +235,27 @@ public class Painter extends JPanel implements KeyListener, Runnable {
 		}
 		n = 100 - ((int) (health) > 0 ? (int) (health) / 100 : 0);
 
-		int re = (255 * n) / 100;
-		int gr = (255 * (100 - n)) / 100;
-		int bl = 0;
+		// int re = (255 * n) / 100;
+		// int gr = (255 * (100 - n)) / 100;
+		// int bl = 0;
 
 		if (index > (choices % 2 == 0 ? choices / 2 - 1 : choices / 2)) {
 			index = (choices % 2 == 0 ? -choices / 2 + 1 : -choices / 2);
 		} else if (index < (choices % 2 == 0 ? -choices / 2 + 1 : -choices / 2)) {
 			index = (choices % 2 == 0 ? choices / 2 - 1 : choices / 2);
 		}
-		p.setColor(new Color(re, gr, bl));
-		p.fillRect(0, height - 10, width - n * (width / 100 + 1), 15);
+
+		// p.setColor(new Color(re, gr, bl));
+		// p.fillRect(0, height - 10, width - n * (width / 100 + 1), 15);
+
+		int tamanho = (int) (HEALTH * HEALTH / 1E5);
+		for (int i = 0; i < health / 1000; i++) {
+			p.drawImage(HEART, (width / 2 - tamanho / 2) + i * (int) (tamanho / (HEALTH / 1000)) - HEART.getWidth() / 8,
+					height - 50, null);
+		}
+
 		p.drawRect(width / 2 + index * (width / choices) - 50, height / 4 * 3 - 50, 100, 100);
+
 		try {
 			String correct = Integer.toString(meteors.get(0).n1 * meteors.get(0).n2);
 			Random random = new Random();
@@ -277,7 +324,30 @@ public class Painter extends JPanel implements KeyListener, Runnable {
 		p.setColor(new Color(255, 0, 0, errou * 20));
 		p.fillRect(0, 0, width, height);
 
-		frames++;
+		if (GAMEOVER) {
+			if (overMatrix < 255)
+				overMatrix++;
+			p.setColor(new Color(255 - overMatrix, 255 - overMatrix, 255 - overMatrix));
+			p.fillRect(0, 0, width, height);
+			if (overMatrix == 255) {
+				if (overString < 255) {
+					overString += 3;
+				}
+				p.setColor(new Color(overString, overString, overString));
+				p.setFont(font3);
+				p.drawString("GAME OVER", width / 2 - 300, height / 2 - font3.getSize() / 2);
+				if (overString == 255) {
+					if (overButton1 < 255) {
+						overButton1 += 3;
+					}
+					p.setColor(new Color(overButton1, overButton1, overButton1));
+					p.fillRect(width / 2 - 100, height / 2 - 10, 200, 50);
+					p.setFont(font4);
+					p.setColor(Color.BLACK);
+					p.drawString("MENU PRINCIPAL", width / 2 - 90, height / 2 + 32 - font4.getSize() / 2);
+				}
+			}
+		}
 		try {
 			Thread.sleep(10);
 		} catch (InterruptedException e) {
@@ -292,6 +362,11 @@ public class Painter extends JPanel implements KeyListener, Runnable {
 
 	private void paintLandscape(Graphics2D p) {
 		p.drawImage(LANDSCAPE, 0, height / 2, null);
+
+		if (errou == 0)
+			p.drawImage(SHIP, 0, height - 400, null);
+		else
+			p.drawImage(DANO, 0, height - 400, null);
 	}
 
 	public float getAngle(Point target, Point target2) {
