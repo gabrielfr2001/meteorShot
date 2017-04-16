@@ -1,0 +1,3372 @@
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@67c33749   java.io.BufferedInputStream@fba92d3
+
+
+===========================
+
+
+===========================
+
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+
+===========================
+
+
+
+++java.io.FileNotFoundException: C:\Users\Usuario\Desktop\WSpace\Projeto%20Omega%20SpaceDefender\bin\br\com\roska\images\Minecraftia-Regular.ttf (O sistema não pode encontrar o caminho especificado)
+java.io.FileInputStream.open0(Native Method)
+java.io.FileInputStream.open(Unknown Source)
+java.io.FileInputStream.<init>(Unknown Source)
+java.io.FileInputStream.<init>(Unknown Source)
+br.com.roska.main.Painter.loadFonts(Painter.java:191)
+br.com.roska.main.Painter.<init>(Painter.java:126)
+br.com.roska.main.Driver.main(Driver.java:21)
+
+
+++java.io.FileNotFoundException: C:\Users\Usuario\Desktop\WSpace\Projeto%20Omega%20SpaceDefender\bin\br\com\roska\images\Minecraftia-Regular.ttf (O sistema não pode encontrar o caminho especificado)
+java.io.FileInputStream.open0(Native Method)
+java.io.FileInputStream.open(Unknown Source)
+java.io.FileInputStream.<init>(Unknown Source)
+java.io.FileInputStream.<init>(Unknown Source)
+br.com.roska.main.Painter.loadFonts(Painter.java:191)
+br.com.roska.main.Painter.<init>(Painter.java:126)
+br.com.roska.main.Driver.main(Driver.java:21)
+
+
+++java.io.FileNotFoundException: file:\C:\Users\Usuario\Desktop\WSpace\Projeto%20Omega%20SpaceDefender\bin\br\com\roska\images\Minecraftia-Regular.ttf (A sintaxe do nome do arquivo, do nome do diretório ou do rótulo do volume está incorreta)
+java.io.FileInputStream.open0(Native Method)
+java.io.FileInputStream.open(Unknown Source)
+java.io.FileInputStream.<init>(Unknown Source)
+java.io.FileInputStream.<init>(Unknown Source)
+br.com.roska.main.Painter.loadFonts(Painter.java:191)
+br.com.roska.main.Painter.<init>(Painter.java:126)
+br.com.roska.main.Driver.main(Driver.java:21)
+
+
+++java.io.FileNotFoundException: file:\C:\Users\Usuario\Desktop\WSpace\Projeto%20Omega%20SpaceDefender\bin\br\com\roska\images\Minecraftia-Regular.ttf (A sintaxe do nome do arquivo, do nome do diretório ou do rótulo do volume está incorreta)
+java.io.FileInputStream.open0(Native Method)
+java.io.FileInputStream.open(Unknown Source)
+java.io.FileInputStream.<init>(Unknown Source)
+java.io.FileInputStream.<init>(Unknown Source)
+br.com.roska.main.Painter.loadFonts(Painter.java:191)
+br.com.roska.main.Painter.<init>(Painter.java:126)
+br.com.roska.main.Driver.main(Driver.java:21)
+
+
+++java.io.FileNotFoundException: C:\Users\Usuario\Desktop\WSpace\Projeto%20Omega%20SpaceDefender\bin\br\com\roska\images\Minecraftia-Regular.TTF (O sistema não pode encontrar o caminho especificado)
+java.io.FileInputStream.open0(Native Method)
+java.io.FileInputStream.open(Unknown Source)
+java.io.FileInputStream.<init>(Unknown Source)
+br.com.roska.main.Painter.loadFonts(Painter.java:190)
+br.com.roska.main.Painter.<init>(Painter.java:126)
+br.com.roska.main.Driver.main(Driver.java:21)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@fba92d3   java.io.BufferedInputStream@662b4c69
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@35a50a4c   java.io.BufferedInputStream@1f021e6c
+
+
+===========================
+
+
+++java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+java.util.ArrayList.rangeCheck(Unknown Source)
+java.util.ArrayList.get(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:430)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@2a54a73f   java.io.BufferedInputStream@16a0ee18
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@35a50a4c   java.io.BufferedInputStream@1f021e6c
+
+
+===========================
+
+
+++java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+java.util.ArrayList.rangeCheck(Unknown Source)
+java.util.ArrayList.get(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:430)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:467)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+java.awt.Font.getStringBounds(Unknown Source)
+java.awt.FontMetrics.getStringBounds(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:482)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+++java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+java.util.ArrayList.rangeCheck(Unknown Source)
+java.util.ArrayList.get(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:578)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+java.util.ArrayList.rangeCheck(Unknown Source)
+java.util.ArrayList.get(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:591)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+java.util.ArrayList.rangeCheck(Unknown Source)
+java.util.ArrayList.get(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:591)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+java.util.ArrayList.rangeCheck(Unknown Source)
+java.util.ArrayList.get(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:578)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+java.util.ArrayList.rangeCheck(Unknown Source)
+java.util.ArrayList.get(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:578)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+java.util.ArrayList.rangeCheck(Unknown Source)
+java.util.ArrayList.get(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:591)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+java.util.ArrayList.rangeCheck(Unknown Source)
+java.util.ArrayList.get(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:569)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+java.util.ArrayList.rangeCheck(Unknown Source)
+java.util.ArrayList.get(Unknown Source)
+br.com.roska.main.Painter.paint(Painter.java:591)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+++java.lang.NullPointerException
+br.com.roska.main.Painter.tryDestroy(Painter.java:570)
+br.com.roska.main.Painter.paint(Painter.java:473)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+++java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.lang.String.charAt(Unknown Source)
+br.com.roska.main.Painter.keyTyped(Painter.java:638)
+java.awt.Component.processKeyEvent(Unknown Source)
+java.awt.Component.processEvent(Unknown Source)
+java.awt.Container.processEvent(Unknown Source)
+java.awt.Window.processEvent(Unknown Source)
+java.awt.Component.dispatchEventImpl(Unknown Source)
+java.awt.Container.dispatchEventImpl(Unknown Source)
+java.awt.Window.dispatchEventImpl(Unknown Source)
+java.awt.Component.dispatchEvent(Unknown Source)
+java.awt.KeyboardFocusManager.redispatchEvent(Unknown Source)
+java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(Unknown Source)
+java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(Unknown Source)
+java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(Unknown Source)
+java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
+java.awt.Component.dispatchEventImpl(Unknown Source)
+java.awt.Container.dispatchEventImpl(Unknown Source)
+java.awt.Window.dispatchEventImpl(Unknown Source)
+java.awt.Component.dispatchEvent(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue$4.run(Unknown Source)
+java.awt.EventQueue$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+++java.lang.IllegalArgumentException: bound must be positive
+java.util.Random.nextInt(Unknown Source)
+br.com.roska.threads.Ticker.run(Ticker.java:35)
+java.lang.Thread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+++java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+java.lang.String.charAt(Unknown Source)
+br.com.roska.main.Painter.keyTyped(Painter.java:568)
+java.awt.Component.processKeyEvent(Unknown Source)
+java.awt.Component.processEvent(Unknown Source)
+java.awt.Container.processEvent(Unknown Source)
+java.awt.Window.processEvent(Unknown Source)
+java.awt.Component.dispatchEventImpl(Unknown Source)
+java.awt.Container.dispatchEventImpl(Unknown Source)
+java.awt.Window.dispatchEventImpl(Unknown Source)
+java.awt.Component.dispatchEvent(Unknown Source)
+java.awt.KeyboardFocusManager.redispatchEvent(Unknown Source)
+java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(Unknown Source)
+java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(Unknown Source)
+java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(Unknown Source)
+java.awt.DefaultKeyboardFocusManager.dispatchEvent(Unknown Source)
+java.awt.Component.dispatchEventImpl(Unknown Source)
+java.awt.Container.dispatchEventImpl(Unknown Source)
+java.awt.Window.dispatchEventImpl(Unknown Source)
+java.awt.Component.dispatchEvent(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue$4.run(Unknown Source)
+java.awt.EventQueue$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+++java.lang.IllegalArgumentException: bound must be positive
+java.util.Random.nextInt(Unknown Source)
+br.com.roska.threads.Ticker.run(Ticker.java:35)
+java.lang.Thread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+++java.lang.IllegalArgumentException: bound must be positive
+java.util.Random.nextInt(Unknown Source)
+br.com.roska.threads.Ticker.run(Ticker.java:38)
+java.lang.Thread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@16a0ee18   java.io.BufferedInputStream@3d6f0054
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+++java.lang.IllegalArgumentException: bound must be positive
+java.util.Random.nextInt(Unknown Source)
+br.com.roska.threads.Ticker.run(Ticker.java:39)
+java.lang.Thread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+++java.lang.IllegalArgumentException: bound must be positive
+java.util.Random.nextInt(Unknown Source)
+br.com.roska.threads.Ticker.run(Ticker.java:39)
+java.lang.Thread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+++java.lang.IllegalArgumentException: alpha value out of range
+java.awt.AlphaComposite.<init>(Unknown Source)
+java.awt.AlphaComposite.getInstance(Unknown Source)
+br.com.roska.model.Particle.paint(Particle.java:51)
+br.com.roska.model.Meteor.paint(Meteor.java:114)
+br.com.roska.main.Painter.paint(Painter.java:298)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.ArrayIndexOutOfBoundsException: 5
+br.com.roska.main.Painter.paint(Painter.java:379)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.ArrayIndexOutOfBoundsException: 5
+br.com.roska.main.Painter.paint(Painter.java:379)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+++java.lang.ArrayIndexOutOfBoundsException: 5
+br.com.roska.main.Painter.paint(Painter.java:380)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
+
+
+++java.lang.NullPointerException
+br.com.roska.threads.Threader.run(Threader.java:116)
+java.lang.Thread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@1f021e6c   java.io.BufferedInputStream@103f852
+
+
+===========================
+
+
+++java.lang.NullPointerException
+br.com.roska.main.Painter.paint(Painter.java:361)
+javax.swing.JComponent.paintToOffscreen(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+javax.swing.RepaintManager.paint(Unknown Source)
+javax.swing.JComponent._paintImmediately(Unknown Source)
+javax.swing.JComponent.paintImmediately(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+javax.swing.RepaintManager$4.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+javax.swing.RepaintManager.access$1200(Unknown Source)
+javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+java.awt.event.InvocationEvent.dispatch(Unknown Source)
+java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+java.awt.EventQueue.access$500(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.awt.EventQueue$3.run(Unknown Source)
+java.security.AccessController.doPrivileged(Native Method)
+java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+java.awt.EventQueue.dispatchEvent(Unknown Source)
+java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+java.awt.EventDispatchThread.run(Unknown Source)
