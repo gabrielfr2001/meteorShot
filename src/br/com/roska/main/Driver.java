@@ -2,9 +2,14 @@ package br.com.roska.main;
 
 import javax.swing.JFrame;
 
+import br.com.roska.listener.MouseListener;
+import br.com.roska.threads.SoundThread;
+
 public class Driver {
 
 	private static final String WINDOW_NAME = "Omega Space Defender (OSD)";
+	public static final String MAIN_MUSIC = "arcade_music.wav";
+	public static final int MAIN_MUSIC_LOOP_TIME = 34;
 	public static JFrame frame;
 
 	public static void main(String[] args) {
@@ -15,14 +20,21 @@ public class Driver {
 
 		frame.setVisible(true);
 
-		while(!frame.isVisible()){
+		while (!frame.isVisible()) {
 		}
-		
+
 		Painter painter = new Painter(frame);
 		frame.addKeyListener(painter);
-		
+
+		MouseListener ml = new MouseListener(frame);
+
+		frame.getContentPane().addMouseListener(ml);
+		frame.getContentPane().addMouseMotionListener(ml);
+
 		frame.getContentPane().add(painter);
 		frame.setResizable(false);
 		Driver.frame = frame;
+
+		Painter.playSound(MAIN_MUSIC, SoundThread.REPEAT, MAIN_MUSIC_LOOP_TIME);
 	}
 }

@@ -103,7 +103,11 @@ public class ImageUtil {
 	}
 
 	public Image loadImage(URL url) {
-		image = new ImageIcon(url).getImage();
+		try {
+			image = new ImageIcon(url).getImage();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return image;
 	}
 

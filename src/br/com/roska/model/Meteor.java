@@ -42,6 +42,9 @@ public class Meteor {
 	public boolean dontExplode;
 	private ImageUtil imageUtil;
 	public boolean inactive;
+	public int targetX;
+	public int targetY;
+	public int life;
 
 	public Meteor(double x, double y, String stat, double size) {
 		this.x = x;
@@ -62,15 +65,16 @@ public class Meteor {
 			if (!first) {
 				first = true;
 			}
-		
+
 			for (int i = 0; i < particles.size(); i++) {
 				Particle o = particles.get(i);
-				if (!o.active) {
-					particles.remove(o);
-					Painter.particles--;
-				} else {
-					o.paint(g);
-				}
+				if (o != null)
+					if (!o.active) {
+						particles.remove(o);
+						Painter.particles--;
+					} else {
+						o.paint(g);
+					}
 			}
 
 			g.setColor(Color.BLACK);
@@ -91,14 +95,16 @@ public class Meteor {
 
 						imageUtil.setImage(DESTROCO_0);
 
-						p.image = imageUtil.transform(random.nextInt(10) + 10, random.nextInt(10) + 10, particleColor);
-						
+						p.image = imageUtil.transform(random.nextInt(10) + 10, random.nextInt(10) + 10,
+								(destroyType == 1 || destroyType == 0) ? Color.WHITE : Color.BLUE);
+
 						double angle = Math.random() * 360;
 						p.vy = Math.sin(angle) * Math.random() * 2 + vy;
 						p.vx = Math.cos(angle) * Math.random() * 2 + vx;
 						p.active = true;
 						p.life = 200;
 						p.alphaReduce = 0.01;
+						p.image = Meteor.DESTROCO_0;
 						p.x = x + size;
 						p.rotateness = Math.random() - Math.random();
 						p.y = y + size;
@@ -108,10 +114,12 @@ public class Meteor {
 				}
 				for (int i = 0; i < particles.size(); i++) {
 					Particle o = particles.get(i);
-					if (!o.active) {
-						particles.remove(o);
-					} else {
-						o.paint(g);
+					if (o != null) {
+						if (!o.active) {
+							particles.remove(o);
+						} else {
+							o.paint(g);
+						}
 					}
 				}
 			}

@@ -1,10 +1,11 @@
 package br.com.roska.threads;
 
 import java.awt.Color;
-import java.util.Random;
+import java.util.List;
 
 import br.com.roska.main.Painter;
 import br.com.roska.model.Meteor;
+import br.com.roska.model.Particle;
 import br.com.roska.util.ImageUtil;
 
 public class Threader implements Runnable {
@@ -24,21 +25,37 @@ public class Threader implements Runnable {
 
 	@Override
 	public void run() {
+		List<Meteor> meteors = Painter.meteors;
+
+		meteors.remove(m);
+		meteors.add(m);
+
+		Painter.meteors = meteors;
+
+		if (Ticker.onBossBattle) {
+			if (Ticker.boss != null) {
+				Ticker.boss.add(true);
+			}
+		}
+		if (Painter.meteors.size() > 0) {
+			Ticker.atualize = true;
+		}
 
 		if (i == KILL) {
+			m.destroyType = TYPE;
 
 			Painter.cando = true;
-			System.out.println(m.n1 * m.n2);
 			Painter.add = true;
 			Painter.meteorDestroy = m;
 
 			if (TYPE == 0) {
 				m.inactive = true;
 				m.dead = true;
-				m.destroyType = new Random().nextInt(6);
 				m.canadParticle = false;
 				for (int i = 0; i < m.particles.size(); i++) {
-					m.particles.get(i).sizeDecay = 0.3;
+					if (m.particles.get(i) != null) {
+						m.particles.get(i).sizeDecay = 0.3;
+					}
 				}
 				for (int i = 0; i < 30; i++) {
 					m.vely += m.accy;
@@ -59,11 +76,12 @@ public class Threader implements Runnable {
 
 				m.image = imageUtil.dye(new Color(0, 70, 255, 100));
 
-				m.destroyType = new Random().nextInt(6);
 				m.canadParticle = false;
 				m.particleColor = new Color(0, 70, 255, 100);
 				for (int i = 0; i < m.particles.size(); i++) {
-					m.particles.get(i).sizeDecay = 0.8;
+					if (m.particles.get(i) != null) {
+						m.particles.get(i).sizeDecay = 0.8;
+					}
 				}
 
 				try {
@@ -86,10 +104,11 @@ public class Threader implements Runnable {
 				m.notMoving = true;
 				m.appendRotation = 2;
 				m.y++;
-				m.destroyType = new Random().nextInt(6);
 				for (int o = 0; o < m.particles.size(); o++) {
-					m.particles.get(o).sizeDecay = 1;
-					m.particles.get(o).life = 3;
+					if (m.particles.get(o) != null) {
+						m.particles.get(o).sizeDecay = 1;
+						m.particles.get(o).life = 3;
+					}
 				}
 
 				try {
@@ -113,8 +132,11 @@ public class Threader implements Runnable {
 
 						m.size = m.image.getHeight(null);
 						for (int o = 0; o < m.particles.size(); o++) {
-							m.particles.get(o).alphaReduce = 0.1;
-							m.particles.get(o).sizeDecay = 1;
+							Particle p = m.particles.get(o);
+							if (p != null) {
+								p.alphaReduce = 0.1;
+								p.sizeDecay = 1;
+							}
 						}
 					} catch (Exception e) {
 						e.printStackTrace();
