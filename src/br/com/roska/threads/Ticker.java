@@ -17,16 +17,17 @@ public class Ticker implements Runnable {
 	private static final int MIN = 1;
 	private static final int MAX = 2;
 	public static int correctIndex;
-	private static final int BOT_SPEED = 2;// 50
-	public static final long STEP = 12;// 12
-	private static final int STARTBOSS = 0;
-	private int frames = 0;
+	public static int BOT_SPEED = 50;// 50
+	public static long STEP = 12;// 12
+	public static int STARTBOSS = 20;// 20
+	public static int frames = 0;
 	public static boolean onBossBattle;
-	public boolean onceBossBattle = true;
+	public static boolean onceBossBattle = true;
 	public static boolean atualize;
 	public static List<Thread> threadsToRemove = new ArrayList<>();
 	public static Boss boss;
 	private static int lastResult;
+	public static List<Threader> removeThreaders = new ArrayList<>();
 
 	@Override
 	public void run() {
@@ -39,6 +40,10 @@ public class Ticker implements Runnable {
 				for (int i = 0; i < threadsToRemove.size(); i++) {
 					Painter.threads.remove(threadsToRemove.get(i));
 					threadsToRemove.remove(threadsToRemove.get(i));
+				}
+				for (int i = 0; i < removeThreaders.size(); i++) {
+					Painter.threads.remove(removeThreaders.get(i));
+					removeThreaders.remove(removeThreaders.get(i));
 				}
 
 				if (Painter.screen == Painter.SCREEN_GAME) {
@@ -153,59 +158,65 @@ public class Ticker implements Runnable {
 
 								}
 					for (int i = 0; i < Painter.meteors.size(); i++) {
-						Meteor m = Painter.meteors.get(i);
-						for (int a = 0; a < m.particles.size(); a++) {
+						if (i < Painter.meteors.size()) {
+							Meteor m = null;
 							try {
-								Particle o = m.particles.get(a);
-								if (o != null) {
-									o.tick();
+								m = Painter.meteors.get(i);
+								for (int a = 0; a < m.particles.size(); a++) {
+									try {
+										Particle o = m.particles.get(a);
+										if (o != null) {
+											o.tick();
+										}
+									} catch (Exception e) {
+									}
 								}
 							} catch (Exception e) {
-								// TODO
-							}
-						}
-						if (m.particles.size() < 200 && m.canadParticle) {
-							for (int e = 0; e < 3; e++) {
-								Particle p = new Particle();
-								p.x = m.x + m.size - 5 + Math.random() * m.size / 3 - Math.random() * m.size / 3;
-								p.y = m.y + m.size + Math.random() * m.size / 3 - Math.random() * m.size / 2;
-								p.active = true;
-								p.spreadness = 2;
-								p.vy = -m.vy;
-								p.vx = -m.vx;
-								p.size = 30;
-								p.sizeDecay = 0.5;
-								p.c = m.particleColor;
-								p.life = 70;
-								p.rotateness = 10;
-								m.particles.add(p);
-								Painter.particles++;
-							}
-						}
-						if (m.y > Painter.height - m.size - 240 && !m.inactive) {
-							Thread thread = new Thread(new Threader(m, Threader.EXPLODE));
-							Painter.threads.add(thread);
-							thread.start();
-							Painter.errou = 10;
-							Painter.pressedDisp = "";
-							Painter.pressed = "";
-							Thread t = new Thread(new HealthKiller(1000, 20));
-							t.start();
-							Painter.threads.add(t);
-						}
-						double angle = Maths.getAngle(new Point((int) m.x, (int) m.y),
-								new Point((int) (Painter.width / 2 - m.size), (int) (Painter.height * 1.5)));
-						double decaimentGrade = 1;
-						if (m.notMoving) {
-							decaimentGrade = 0.1;
-						}
 
-						double level = Painter.level / (40f + Math.sqrt(Painter.level));
+							}
+							if (m.particles.size() < 200 && m.canadParticle) {
+								for (int e = 0; e < 3; e++) {
+									Particle p = new Particle();
+									p.x = m.x + m.size - 5 + Math.random() * m.size / 3 - Math.random() * m.size / 3;
+									p.y = m.y + m.size + Math.random() * m.size / 3 - Math.random() * m.size / 2;
+									p.active = true;
+									p.spreadness = 2;
+									p.vy = -m.vy;
+									p.vx = -m.vx;
+									p.size = 30;
+									p.sizeDecay = 0.5;
+									p.c = m.particleColor;
+									p.life = 70;
+									p.rotateness = 10;
+									m.particles.add(p);
+									Painter.particles++;
+								}
+							}
+							if (m.y > Painter.height - m.size - 240 && !m.inactive) {
+								Thread thread = new Thread(new Threader(m, Threader.EXPLODE));
+								Painter.threads.add(thread);
+								thread.start();
+								Painter.errou = 10;
+								Painter.pressedDisp = "";
+								Painter.pressed = "";
+								Thread t = new Thread(new HealthKiller(1000, 20));
+								t.start();
+								Painter.threads.add(t);
+							}
+							double angle = Maths.getAngle(new Point((int) m.x, (int) m.y),
+									new Point((int) (Painter.width / 2 - m.size), (int) (Painter.height * 1.5)));
+							double decaimentGrade = 1;
+							if (m.notMoving) {
+								decaimentGrade = 0.1;
+							}
 
-						m.vx = Math.cos(angle) * (level + 0.5) * m.speed;
-						m.x += m.vx * decaimentGrade;
-						m.vy = Math.sin(angle) * (level + 0.5) * m.speed;
-						m.y += m.vy * decaimentGrade;
+							double level = Painter.level / (40f + Math.sqrt(Painter.level));
+
+							m.vx = Math.cos(angle) * (level + 0.5) * m.speed;
+							m.x += m.vx * decaimentGrade;
+							m.vy = Math.sin(angle) * (level + 0.5) * m.speed;
+							m.y += m.vy * decaimentGrade;
+						}
 					}
 					if (Painter.BOT && frames % BOT_SPEED == 0) {
 						Painter.index = correctIndex - Painter.choices / 2;
@@ -393,13 +404,12 @@ public class Ticker implements Runnable {
 		Painter.screen = Painter.SCREEN_GAMEOVER;
 		Painter.threads.set(Painter.soundIndex, null);
 		if (Painter.mainThread != null) {
-			Painter.mainThread.cancel = true;
 			Painter.mainThread.cancel();
 		}
 		Painter.playSound("game_over.wav", SoundThread.NOREPEAT, 0);
 		Painter.stopado = true;
 
-		Painter.lm.register("jureg", Painter.pontos);
+		Painter.lm.register(Painter.name, Painter.pontos);
 	}
 
 	public static void refactoryMeteor() {

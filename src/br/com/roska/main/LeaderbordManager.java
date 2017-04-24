@@ -18,88 +18,104 @@ public class LeaderbordManager {
 
 	public void register(String nome, long pontos) {
 		try {
+
+			String strsDef[] = new String[MAX];
 			String strs[] = read().split(";");
-			long keys[] = new long[MAX + 1];
 
-			HashMap<Long, String> map = new HashMap<>();
+			if (strs.length > 0 && !strs[0].equals("")) {
+				long keys[] = new long[MAX + 1];
 
-			for (int i = 0; i < strs.length; i++) {
+				HashMap<Long, String> map = new HashMap<>();
 
-				String[] parts = strs[i].split("- ");
-				String[] parts0 = parts[1].split(", ");
-				parts0[1] = parts0[1].replace(" pontos", "");
+				for (int i = 0; i < strs.length; i++) {
 
-				map.put(Long.parseLong(parts0[1]), parts0[0]);
+					String[] parts = strs[i].split("- ");
+					String[] parts0 = parts[1].split(", ");
+					parts0[1] = parts0[1].replace(" pontos", "");
 
-				keys[i] = Long.parseLong(parts0[1]);
+					map.put(Long.parseLong(parts0[1]), parts0[0]);
 
-			}
+					keys[i] = Long.parseLong(parts0[1]);
 
-			Arrays.sort(keys);
-
-			keys[0] = pontos;
-			map.put(pontos, nome);
-
-			Arrays.sort(keys);
-
-			String strsDef[] = new String[5];
-
-			for (int i = MAX; i > 0; i--) {
-				try {
-					strsDef[MAX - i] = DEFAULT_FORMAT.replace("NUMBER", Integer.toString(MAX - i + 1))
-							.replace("NOME", map.get(keys[i])).replace("PONTOS", Long.toString(keys[i]));
-				} catch (Exception e) {
-					e.printStackTrace();
 				}
+
+				Arrays.sort(keys);
+
+				keys[0] = pontos;
+				map.put(pontos, nome);
+
+				Arrays.sort(keys);
+
+				strsDef = new String[5];
+
+				for (int i = MAX; i > 0; i--) {
+					try {
+						strsDef[MAX - i] = DEFAULT_FORMAT.replace("NUMBER", Integer.toString(MAX - i + 1))
+								.replace("NOME", map.get(keys[i])).replace("PONTOS", Long.toString(keys[i]));
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			} else {
+				strsDef = new String[1];
+				strsDef[0] = DEFAULT_FORMAT.replace("NUMBER", Long.toString(1)).replace("NOME", nome).replace("PONTOS",
+						Long.toString(pontos));
 			}
 
 			String str = "";
-
 			for (int i = 0; i < strsDef.length; i++) {
-				str += strsDef[i];
-				if (i != strsDef.length - 1) {
-					str += ";";
+				if (strsDef[i] != null) {
+					if (!strsDef[i].contains("null")) {
+						str += strsDef[i];
+						if (i != strsDef.length - 1) {
+							str += ";";
+						}
+					}
 				}
 			}
 
 			BufferedWriter out = new BufferedWriter(new FileWriter(PATH + FILE));
 			out.write(str);
-
 			out.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
-	public String[] getRanking(){
+	public String[] getRanking() {
 		return read().split(";");
 	}
-	
+
 	@SuppressWarnings("resource")
 	private String read() {
 
 		BufferedReader br = null;
 		FileReader fr = null;
 		String str = "";
+		File f = new File(PATH + FILE);
 		try {
+			if (f.exists() && !f.isDirectory()) {
 
-			fr = new FileReader(PATH + FILE);
-			br = new BufferedReader(fr);
+				fr = new FileReader(PATH + FILE);
+				br = new BufferedReader(fr);
 
-			String sCurrentLine;
+				String sCurrentLine;
 
-			br = new BufferedReader(new FileReader(PATH + FILE));
+				br = new BufferedReader(new FileReader(PATH + FILE));
 
-			while ((sCurrentLine = br.readLine()) != null) {
-				str += sCurrentLine;
+				while ((sCurrentLine = br.readLine()) != null) {
+					str += sCurrentLine;
+				}
+				try {
+					br.close();
+					fr.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+
+			} else {
+				f.createNewFile();
 			}
-			try {
-				br.close();
-				fr.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

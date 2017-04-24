@@ -15,7 +15,6 @@ public class SoundThread implements Runnable {
 	private String ind;
 	private boolean repeat;
 	private int stop;
-	public boolean cancel;
 	Clip clip;
 
 	public SoundThread(String ref, int rep, int sec) {
@@ -46,10 +45,6 @@ public class SoundThread implements Runnable {
 				clip = AudioSystem.getClip();
 				clip.open(ais);
 				clip.start();
-				if (cancel) {
-					clip.stop();
-					break;
-				}
 			}
 
 		} catch (Exception e) {

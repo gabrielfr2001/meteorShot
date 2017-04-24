@@ -32,6 +32,7 @@ import br.com.roska.images.Reference;
 import br.com.roska.model.Button;
 import br.com.roska.model.Meteor;
 import br.com.roska.screens.Credits;
+import br.com.roska.screens.EasterEgg;
 import br.com.roska.screens.GameOver;
 import br.com.roska.screens.Leaderboard;
 import br.com.roska.screens.Screen;
@@ -66,6 +67,7 @@ public class Painter extends JPanel implements KeyListener {
 	public static final int SCREEN_TUTORIAL2 = 4;
 	public static final int SCREEN_GAMEOVER = 5;
 	public static final int SCREEN_LEADERBOARD = 6;
+	public static final int SCREEN_EASTER_EGG = 7;
 
 	public static final int MENU_BUTTON_PLAY = Screen.MENU_BUTTON_PLAY;
 	public static final int MENU_BUTTON_CREDITS = Screen.MENU_BUTTON_CREDITS;
@@ -84,6 +86,9 @@ public class Painter extends JPanel implements KeyListener {
 
 	public static final String BUTTON_PLAY = Screen.BUTTON_PLAY;
 	public static final String BUTTON_CREDITS = Screen.BUTTON_CREDITS;
+
+	private static final int BUTTON_CANCELAR = -1;
+	private static final int BUTTON_PROCEDER = -2;
 
 	public static AudioInputStream SHOT_0;
 	private int NAVE_POS_Y;
@@ -112,6 +117,7 @@ public class Painter extends JPanel implements KeyListener {
 	public static String pressedDisp = "";
 	public static String elogio;
 	public static String correct;
+	public static String name;
 
 	public static int countDown;
 	public static int countDown2;
@@ -142,7 +148,7 @@ public class Painter extends JPanel implements KeyListener {
 
 	public static boolean devMode = false;
 	public static boolean BOT = false;
-	public static boolean playsounds = false;
+	public static boolean playsounds = true;
 
 	public static boolean add = true;
 	public static boolean cando = true;
@@ -172,12 +178,15 @@ public class Painter extends JPanel implements KeyListener {
 	public static GameOver gameover;
 	public static Leaderboard leaderboard;
 	public static Meteor meteorDestroy;
+	public static EasterEgg easterEgg;
 
 	public static LeaderbordManager lm;
 	public static Button b = new Button();
 	public static Logger logger;
 	public static ImageUtil imageUtil;
 	public static SoundThread mainThread;
+	public static Popup popup;
+	public static Popup popupName;
 
 	private static JFrame frame;
 
@@ -263,6 +272,7 @@ public class Painter extends JPanel implements KeyListener {
 			tutorial02 = new Tutorial02();
 			gameover = new GameOver();
 			leaderboard = new Leaderboard();
+			easterEgg = new EasterEgg();
 
 			SHIPS = new Image[MAX_IMAGE];
 			DANOS = new Image[MAX_IMAGE];
@@ -273,6 +283,15 @@ public class Painter extends JPanel implements KeyListener {
 			add = true;
 			screen = SCREEN_MENU;
 			currentScreen = menu;
+
+			popupName = new Popup("DIGITE UM NOME");
+			popupName.textField = true;
+			Button button = new Button(0, 0, 200, 40, "CANCELAR", BUTTON_CANCELAR);
+			button.activated = true;
+			popupName.addButton(button);
+			button = new Button(0, 0, 200, 40, "PROCEDER", BUTTON_PROCEDER);
+			button.activated = true;
+			popupName.addButton(button);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -389,14 +408,18 @@ public class Painter extends JPanel implements KeyListener {
 					}
 					if (meteors != null && pressed != null)
 						for (int i = meteors.size() - 1; i >= 0; i--) {
-							if (meteors.size() > 0) {
-								Meteor m = meteors.get(i);
-								m.paint(p);
-								if (i == 0) {
-									imageUtil.setImage(ORIGINAL_MIRA);
-									MIRA = imageUtil.resize((int) m.size + 20, (int) m.size + 20);
-									p.drawImage(MIRA, (int) (m.x - MIRA.getWidth(null) / 2 + m.size),
-											(int) (m.y - MIRA.getHeight(null) / 2 + m.size), null);
+							if (meteors.size() > i) {
+								try {
+									Meteor m = meteors.get(i);
+									m.paint(p);
+									if (i == 0) {
+										imageUtil.setImage(ORIGINAL_MIRA);
+										MIRA = imageUtil.resize((int) m.size + 20, (int) m.size + 20);
+										p.drawImage(MIRA, (int) (m.x - MIRA.getWidth(null) / 2 + m.size),
+												(int) (m.y - MIRA.getHeight(null) / 2 + m.size), null);
+									}
+								} catch (Exception e) {
+
 								}
 							}
 						}
@@ -418,6 +441,9 @@ public class Painter extends JPanel implements KeyListener {
 						p.drawString("nbr " + correct, 10, font2.getSize() * 4 + (int) (realocator * 1.2f));
 						p.drawString("rain " + Integer.toString(rainbow), 10,
 								font2.getSize() * 5 + (int) (realocator * 1.2f));
+						p.drawString("sizeThreads " + Integer.toString(threads.size()), 10,
+								font2.getSize() * 9 + (int) (realocator * 1.2f));
+
 					}
 					p.setColor(new Color(0, 255, 0, levelUp * 5));
 
@@ -531,8 +557,9 @@ public class Painter extends JPanel implements KeyListener {
 
 					tryDestroy(p);
 
-					p.setColor(new Color(255, 255, 255, (int) (countDown2 * 25.5)));
-
+					if (countDown2 <= 10) {
+						p.setColor(new Color(255, 255, 255, (int) (countDown2 * 25.5)));
+					}
 					p.drawString(pressedDisp, (int) (width / 2 + xx - 110), (int) (height - 200 + yy));
 					if (acertou > 0) {
 						p.setColor(new Color(0, 255, 0, acertou * 10));
@@ -602,6 +629,12 @@ public class Painter extends JPanel implements KeyListener {
 				gameover.paint(p, this);
 			} else if (screen == SCREEN_LEADERBOARD) {
 				leaderboard.paint(p, this);
+			} else if (screen == SCREEN_EASTER_EGG) {
+				easterEgg.paint(p, this);
+			}
+
+			if (popup != null) {
+				popup.paint(p);
 			}
 
 			try {
@@ -619,8 +652,8 @@ public class Painter extends JPanel implements KeyListener {
 	}
 
 	private void tryDestroy(Graphics2D p) {
-		int navex = refactorNave - 7;
-		int navey = height - 200;
+		int navex = refactorNave - transposeW(7);
+		int navey = height - transposeH(200);
 
 		if (acertou > 0 && meteorDestroy != null) {
 			Meteor d = meteorDestroy;
@@ -635,8 +668,10 @@ public class Painter extends JPanel implements KeyListener {
 				p.setColor(new Color(0, 0, 255));
 				p.setStroke(new BasicStroke(acertou * 2));
 				p.draw(new Line2D.Float(navex, navey, (int) (d.x + d.size), (int) (d.y + d.size)));
-				p.draw(new Line2D.Float(navex + 90, navey + 80, (int) (d.x + d.size), (int) (d.y + d.size)));
-				p.draw(new Line2D.Float(navex - 90, navey + 80, (int) (d.x + d.size), (int) (d.y + d.size)));
+				p.draw(new Line2D.Float(navex + transposeW(90), navey + transposeW(80), (int) (d.x + d.size),
+						(int) (d.y + d.size)));
+				p.draw(new Line2D.Float(navex - transposeW(90), navey + transposeW(80), (int) (d.x + d.size),
+						(int) (d.y + d.size)));
 				p.setColor(Color.WHITE);
 				p.setStroke(new BasicStroke(acertou * 1));
 				p.draw(new Line2D.Float(navex, navey, (int) (d.x + d.size), (int) (d.y + d.size)));
@@ -648,6 +683,14 @@ public class Painter extends JPanel implements KeyListener {
 				p.draw(new Line2D.Float(navex - acertou * 2, navey, (int) (d.x + d.size), (int) (d.y + d.size)));
 			}
 		}
+	}
+
+	private int transposeH(int i) {
+		return (int) (height * i / 720);
+	}
+
+	private int transposeW(int i) {
+		return (int) (width * i / 1350f);
 	}
 
 	public Graphics2D initiateGraphics(Graphics p) {
@@ -715,14 +758,16 @@ public class Painter extends JPanel implements KeyListener {
 				pressedDisp += e.getKeyChar();
 
 				try {
-					if (Integer.toString(meteors.get(0).n1 * meteors.get(0).n2).charAt(pressed.length() - 1) != e
-							.getKeyChar()) {
-						pressed = "";
-						pressedDisp = "";
-						errou = 10;
-						Thread t = new Thread(new HealthKiller(500, 2));
-						t.start();
-						threads.add(t);
+					if (meteors.size() > 0) {
+						if (Integer.toString(meteors.get(0).n1 * meteors.get(0).n2).charAt(pressed.length() - 1) != e
+								.getKeyChar()) {
+							pressed = "";
+							pressedDisp = "";
+							errou = 10;
+							Thread t = new Thread(new HealthKiller(500, 2));
+							t.start();
+							threads.add(t);
+						}
 					}
 				} catch (Exception xe) {
 					xe.printStackTrace();
@@ -794,8 +839,10 @@ public class Painter extends JPanel implements KeyListener {
 		if (b.activated) {
 
 			if (b.id == MENU_BUTTON_PLAY) {
-				screen = SCREEN_GAME;
-				currentScreen = null;
+				// screen = SCREEN_GAME;
+				// currentScreen = null;
+				popup = popupName;
+
 			}
 			if (b.id == MENU_BUTTON_CREDITS) {
 				screen = SCREEN_CREDITS;
@@ -855,11 +902,49 @@ public class Painter extends JPanel implements KeyListener {
 		pontosUp = 0;
 		refactorNave = 0;
 		gameover.ticks = 0;
+		Ticker.boss = null;
+		Ticker.onBossBattle = false;
+		Ticker.onceBossBattle = true;
 
 		add = true;
 
 		meteors = new ArrayList<>();
 
+	}
+
+	public static void buttonPressedPopup() {
+		for (Button but : popup.buttons) {
+			but.hover = false;
+		}
+		if (b.activated) {
+			if (b.id == BUTTON_PROCEDER) {
+				screen = SCREEN_GAME;
+				currentScreen = null;
+				name = popup.fieldText;
+				if (name.contains("-RSKT")) {
+					String[] s = name.split(" ");
+					if (s.length > 1) {
+						Ticker.BOT_SPEED = Integer.parseInt(s[1]);
+					}
+					if (s.length > 2) {
+						Ticker.STEP = Integer.parseInt(s[2]);
+					}
+					if (s.length > 3) {
+						Ticker.STARTBOSS = Integer.parseInt(s[3]);
+					}
+					if (s.length > 4) {
+						BOT = Boolean.parseBoolean(s[4]);
+					}
+
+				}
+				popup = null;
+			}
+			if (b.id == BUTTON_CANCELAR) {
+				popup = null;
+
+			}
+			b.activated = false;
+		}
 	}
 
 }

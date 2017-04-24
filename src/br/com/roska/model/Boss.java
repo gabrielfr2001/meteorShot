@@ -18,6 +18,9 @@ public class Boss {
 	private static final long TIME_ROTATING_LEFT = 180;
 	private static final long MULTIPLIER = 360 / TIME_ROTATING_LEFT;
 	private static final long MINIMIUM_ADD = 350;
+	private final static int HEALTH = 10000;
+	private static final int HEALTH_LOSS = 1000;
+	private static final int EACH_HEART = 1000;
 	public double x;
 	public double y;
 	public Image IMAGE;
@@ -34,9 +37,6 @@ public class Boss {
 	private boolean last;
 	private boolean onceEver;
 	private long lastAdd;
-	private final static int HEALTH = 10000;
-	private static final int HEALTH_LOSS = 1000;
-	private static final int EACH_HEART = 1000;
 	private int health;
 	private boolean onceAdd;
 	private boolean died;
@@ -102,6 +102,7 @@ public class Boss {
 				if (Painter.mainThread != null) {
 					Painter.mainThread.cancel();
 				}
+				
 				Painter.playSound(Driver.MAIN_MUSIC, SoundThread.REPEAT, Driver.MAIN_MUSIC_LOOP_TIME);
 
 				Ticker.onBossBattle = false;

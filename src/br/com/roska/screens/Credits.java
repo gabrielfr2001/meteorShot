@@ -1,6 +1,7 @@
 package br.com.roska.screens;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 
@@ -14,6 +15,7 @@ public class Credits extends Screen {
 	private static int POS_EACH = 50;
 	private static int POS_X = 130;
 	private static int POS_Y = 140;
+	public String field = "";
 
 	public Credits() {
 		super(BUTTON_BOUNDS);
@@ -35,6 +37,9 @@ public class Credits extends Screen {
 		int posX = POS_X;
 		int posY = POS_Y;
 		int each = POS_EACH;
+
+		Font f = Painter.font;
+		p.setFont(new Font(f.getFontName(), f.getStyle(), 20));
 
 		p.drawString("DESENVOLVEDOR E TESTER - PEDRO HENRIQUE CENTENARO", posX, posY + each * 0);
 		p.drawString("DESIGNER - JOSÉ ELIAS FRANÇA", posX, posY + each * 1);

@@ -11,7 +11,7 @@ import br.com.roska.model.Button;
 import br.com.roska.model.Meteor;
 
 public abstract class Screen {
-	
+
 	public List<Button> buttons = new ArrayList<>();
 	public List<Meteor> meteors = new ArrayList<>();
 	public int width;
@@ -32,7 +32,7 @@ public abstract class Screen {
 	public static final int MENU_BUTTON_TUTORIAL2 = 5;
 	public static final int MENU_BUTTON_ANTERIOR = 6;
 	public static final int MENU_BUTTON_REPETIR = 7;
-	public static final int MENU_BUTTON_LEADERBOARD= 8;
+	public static final int MENU_BUTTON_LEADERBOARD = 8;
 
 	public static final String BUTTON_PLAY = "JOGAR";
 	public static final String BUTTON_CREDITS = "CRÉDITOS";
@@ -44,7 +44,7 @@ public abstract class Screen {
 	public static final String BUTTON_REPETIR = "TENTAR DE NOVO";
 	public static final String BUTTON_LEADERBOARD = "RANKING";
 
-	public static final String VERSION = "V1.6 ESTÁVEL";
+	public static final String VERSION = "V1.7 ESTÁVEL";
 
 	public Screen() {
 		width = Painter.width;
@@ -67,33 +67,35 @@ public abstract class Screen {
 		p.setColor(Color.WHITE);
 		p.drawString("SPACE DEFENDER TABUADA " + VERSION, 10, p.getFont().getSize() + 20);
 
-		int index = 0;
-		int bQ = buttons.size();
+		if (buttons.size() > 0) {
+			int index = 0;
+			int bQ = buttons.size();
 
-		for (int i = 0; i < meteors.size(); i++) {
-			meteors.get(i).paint(p);
-		}
-
-		int height0 = 0, width0 = 0;
-
-		for (Button b : buttons) {
-			if (b.orientation == Button.TOP || b.orientation == Button.BOTTOM) {
-				height0 += b.height + b.margin * 2;
-			} else {
-				width0 += b.width + b.margin * 2;
+			for (int i = 0; i < meteors.size(); i++) {
+				meteors.get(i).paint(p);
 			}
-		}
 
-		width0 /= bQ;
-		height0 /= bQ;
+			int height0 = 0, width0 = 0;
 
-		for (Button b : buttons) {
-			b.y = height / 2 - (height0 * index) + y + height0;
-			b.x = width / 2
-					- (width0 * index + (width0 == 0 ? (BUTTON_WIDTH + BUTTON_MARGIN * 2) / 2 : +width0 * bQ / 2)) + x
-					+ width0;
-			b.paint(p);
-			index++;
+			for (Button b : buttons) {
+				if (b.orientation == Button.TOP || b.orientation == Button.BOTTOM) {
+					height0 += b.height + b.margin * 2;
+				} else {
+					width0 += b.width + b.margin * 2;
+				}
+			}
+
+			width0 /= bQ;
+			height0 /= bQ;
+
+			for (Button b : buttons) {
+				b.y = height / 2 - (height0 * index) + y + height0;
+				b.x = width / 2
+						- (width0 * index + (width0 == 0 ? (BUTTON_WIDTH + BUTTON_MARGIN * 2) / 2 : +width0 * bQ / 2))
+						+ x + width0;
+				b.paint(p);
+				index++;
+			}
 		}
 		try {
 			Thread.sleep(1000 / Painter.FPS);

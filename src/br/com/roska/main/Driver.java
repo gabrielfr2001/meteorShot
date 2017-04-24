@@ -3,6 +3,7 @@ package br.com.roska.main;
 import javax.swing.JFrame;
 
 import br.com.roska.listener.MouseListener;
+import br.com.roska.listener.PopupListener;
 import br.com.roska.threads.SoundThread;
 
 public class Driver {
@@ -20,20 +21,29 @@ public class Driver {
 
 		frame.setVisible(true);
 
-		while (!frame.isVisible()) {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 
 		Painter painter = new Painter(frame);
 		frame.addKeyListener(painter);
 
 		MouseListener ml = new MouseListener(frame);
+		PopupListener pl = new PopupListener(frame);
 
+		frame.getContentPane().addMouseListener(pl);
+		frame.getContentPane().addMouseMotionListener(pl);
+		frame.addKeyListener(pl);
 		frame.getContentPane().addMouseListener(ml);
 		frame.getContentPane().addMouseMotionListener(ml);
 
 		frame.getContentPane().add(painter);
 		frame.setResizable(false);
 		Driver.frame = frame;
+		ConfigurationManager cm = new ConfigurationManager();
+		cm.reload();
 
 		Painter.playSound(MAIN_MUSIC, SoundThread.REPEAT, MAIN_MUSIC_LOOP_TIME);
 	}

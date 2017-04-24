@@ -36,7 +36,7 @@ public class MouseListener implements java.awt.event.MouseListener, MouseMotionL
 	@Override
 	public void mousePressed(MouseEvent e) {
 
-		if (Painter.currentScreen != null) {
+		if (Painter.currentScreen != null && Painter.popup == null) {
 
 			int x = (int) e.getPoint().getLocation().getX();
 			int y = (int) e.getPoint().getLocation().getY();
@@ -53,7 +53,7 @@ public class MouseListener implements java.awt.event.MouseListener, MouseMotionL
 	@Override
 	public void mouseReleased(MouseEvent e) {
 
-		if (Painter.currentScreen != null) {
+		if (Painter.currentScreen != null && Painter.popup == null) {
 
 			int x = (int) e.getPoint().getLocation().getX();
 			int y = (int) e.getPoint().getLocation().getY();
@@ -89,7 +89,7 @@ public class MouseListener implements java.awt.event.MouseListener, MouseMotionL
 	@Override
 	public void mouseMoved(MouseEvent e) {
 
-		if (Painter.currentScreen != null) {
+		if (Painter.currentScreen != null && Painter.popup == null) {
 
 			int x = (int) e.getPoint().getLocation().getX();
 			int y = (int) e.getPoint().getLocation().getY();
@@ -113,7 +113,7 @@ public class MouseListener implements java.awt.event.MouseListener, MouseMotionL
 				frame.setCursor(cursor);
 			}
 
-		} else {
+		} else if (Painter.popup == null) {
 			Cursor cursor = Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR);
 			frame.setCursor(cursor);
 		}

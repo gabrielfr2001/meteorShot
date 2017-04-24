@@ -132,10 +132,12 @@ public class Threader implements Runnable {
 
 						m.size = m.image.getHeight(null);
 						for (int o = 0; o < m.particles.size(); o++) {
-							Particle p = m.particles.get(o);
-							if (p != null) {
-								p.alphaReduce = 0.1;
-								p.sizeDecay = 1;
+							if (m.particles.size() > 0) {
+								Particle p = m.particles.get(o);
+								if (p != null) {
+									p.alphaReduce = 0.1;
+									p.sizeDecay = 1;
+								}
 							}
 						}
 					} catch (Exception e) {
@@ -152,7 +154,6 @@ public class Threader implements Runnable {
 					e.printStackTrace();
 					Painter.logger.log(e);
 				}
-
 				Painter.meteors.remove(m);
 
 			}
@@ -162,8 +163,8 @@ public class Threader implements Runnable {
 			Painter.meteors.remove(m);
 			Painter.add = true;
 		}
-
 		Painter.meteors.remove(m);
+		Ticker.removeThreaders.add(this);
 	}
 
 }
