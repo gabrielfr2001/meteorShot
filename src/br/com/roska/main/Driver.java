@@ -11,12 +11,15 @@ public class Driver {
 	private static final String WINDOW_NAME = "Omega Space Defender (OSD)";
 	public static final String MAIN_MUSIC = "arcade_music.wav";
 	public static final int MAIN_MUSIC_LOOP_TIME = 34;
+	private static final int HEIGHT = 768;
+	private static final int WIDTH = 1366;
 	public static JFrame frame;
 
 	public static void main(String[] args) {
 		JFrame frame = new JFrame(WINDOW_NAME);
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(WIDTH, HEIGHT);
 		frame.setExtendedState(frame.getExtendedState() | JFrame.MAXIMIZED_BOTH);
 
 		frame.setVisible(true);

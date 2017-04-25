@@ -14,7 +14,8 @@ import br.com.roska.threads.Ticker;
 
 public class Boss {
 
-	private static final double VELY = 0.05;// 0.03
+	private static final double VELY = 0.03;// 0.03
+	private static final double BOSSGAIN = 2.3;
 	private static final long TIME_ROTATING_LEFT = 180;
 	private static final long MULTIPLIER = 360 / TIME_ROTATING_LEFT;
 	private static final long MINIMIUM_ADD = 350;
@@ -41,6 +42,7 @@ public class Boss {
 	private boolean onceAdd;
 	private boolean died;
 	private boolean dieOnce;
+	public boolean canAdd;
 
 	public Boss() {
 		this.r = new Random();
@@ -57,7 +59,7 @@ public class Boss {
 	public void tick() {
 		y += vy;
 		x += vx;
-		vy = health > 3000 ? VELY : 4 * VELY;
+		vy = health > 3000 ? VELY : BOSSGAIN * VELY;
 
 		int state = health > 3000 ? 150 : 50;
 
@@ -86,26 +88,23 @@ public class Boss {
 			}
 			if (tick - lastAdd > MINIMIUM_ADD && !onceAdd) {
 				onceAdd = true;
-				add(false);
+				if (!canAdd)
+					add(false);
 			}
 
 			rotationLeft();
 
 			if (health <= 0) {
 
-				for (int i = 0; i < Painter.meteors.size(); i++) {
-					if (Painter.meteors.get(i).size == 100) {
-						Painter.meteors.remove(Painter.meteors.get(i));
-					}
-				}
-
 				if (Painter.mainThread != null) {
 					Painter.mainThread.cancel();
 				}
-				
+
 				Painter.playSound(Driver.MAIN_MUSIC, SoundThread.REPEAT, Driver.MAIN_MUSIC_LOOP_TIME);
 
-				Ticker.onBossBattle = false;
+				Ticker.startDepreciationBossBattle = true;
+				Ticker.depreciationStart = 300;
+
 				died = true;
 				if (!dieOnce) {
 					dieOnce = true;
@@ -114,6 +113,7 @@ public class Boss {
 			}
 		} else {
 			vy = -VELY * 10;
+
 		}
 		tick++;
 
@@ -164,7 +164,7 @@ public class Boss {
 	}
 
 	public void add(boolean loss) {
-		if (!died) {
+		if (!died && !canAdd) {
 			if (loss)
 				health -= HEALTH_LOSS;
 
@@ -209,7 +209,6 @@ public class Boss {
 			Painter.add = false;
 
 			List<Meteor> meteors = new ArrayList<Meteor>();
-
 			meteors.add(meteor);
 
 			for (int i = 0; i < Painter.meteors.size(); i++) {
@@ -217,7 +216,7 @@ public class Boss {
 				meteors.add(m);
 			}
 
-			Painter.meteors.add(meteor);
+			Painter.meteors = meteors;
 			Painter.actualize = true;
 			Ticker.atualize = true;
 			Ticker.refactoryMeteor();

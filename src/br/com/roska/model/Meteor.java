@@ -77,7 +77,7 @@ public class Meteor {
 					}
 			}
 
-			g.setColor(Color.BLACK);
+			g.setColor(Color.WHITE);
 			AffineTransform transform = g.getTransform();
 
 			g.rotate(Math.toRadians(rotation), (int) x + image.getWidth(null), (int) y + image.getHeight(null));

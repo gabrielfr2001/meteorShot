@@ -15,16 +15,21 @@ public class Tutorial02 extends Screen {
 	public Tutorial02() {
 		super(new Rectangle(0, Painter.height / 5 * 4, Painter.width, Painter.height / 5));
 
-		Button menuButtonMenu = new Button(Painter.width / 2 - BUTTON_WIDTH / 2, 0, BUTTON_WIDTH, BUTTON_HEIGTH,
-				BUTTON_MENU, MENU_BUTTON_MENU);
-		menuButtonMenu.margin = BUTTON_BORDER;
-		menuButtonMenu.orientation = Button.RIGHT;
-		buttons.add(menuButtonMenu);
 		Button tutorialButtonAnterior = new Button(Painter.width / 2 - BUTTON_WIDTH / 2, 0, BUTTON_WIDTH, BUTTON_HEIGTH,
 				BUTTON_ANTERIOR, MENU_BUTTON_ANTERIOR);
 		tutorialButtonAnterior.margin = BUTTON_BORDER;
 		tutorialButtonAnterior.orientation = Button.RIGHT;
 		buttons.add(tutorialButtonAnterior);
+		Button menuButtonMenu = new Button(Painter.width / 2 - BUTTON_WIDTH / 2, 0, BUTTON_WIDTH, BUTTON_HEIGTH,
+				BUTTON_MENU, MENU_BUTTON_MENU);
+		menuButtonMenu.margin = BUTTON_BORDER;
+		menuButtonMenu.orientation = Button.RIGHT;
+		buttons.add(menuButtonMenu);
+		Button menuButtonPlay = new Button(Painter.width / 2 - BUTTON_WIDTH / 2, 0, BUTTON_WIDTH, BUTTON_HEIGTH,
+				BUTTON_PLAY, MENU_BUTTON_PLAY);
+		menuButtonPlay.margin = BUTTON_BORDER;
+		menuButtonPlay.orientation = Button.RIGHT;
+		buttons.add(menuButtonPlay);
 	}
 
 	@Override

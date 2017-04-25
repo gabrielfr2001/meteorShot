@@ -96,3 +96,238 @@ sun.awt.Win32GraphicsEnvironment@568bf312   java.io.BufferedInputStream@ca263c2
 
 
 ===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@5ab956d7   java.io.BufferedInputStream@3646a422
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@53fe15ff   java.io.BufferedInputStream@449a4f23
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+++java.lang.IllegalArgumentException: No line matching interface Clip supporting format PCM_SIGNED unknown sample rate, 16 bit, stereo, 4 bytes/frame, big-endian is supported.
+javax.sound.sampled.AudioSystem.getLine(Unknown Source)
+javax.sound.sampled.AudioSystem.getClip(Unknown Source)
+br.com.roska.threads.SoundThread.run(SoundThread.java:36)
+java.lang.Thread.run(Unknown Source)
+
+
+++java.lang.IllegalArgumentException: No line matching interface Clip supporting format PCM_SIGNED unknown sample rate, 16 bit, stereo, 4 bytes/frame, big-endian is supported.
+javax.sound.sampled.AudioSystem.getLine(Unknown Source)
+javax.sound.sampled.AudioSystem.getClip(Unknown Source)
+br.com.roska.threads.SoundThread.run(SoundThread.java:36)
+java.lang.Thread.run(Unknown Source)
+
+
+++java.lang.IllegalArgumentException: No line matching interface Clip supporting format PCM_SIGNED unknown sample rate, 16 bit, stereo, 4 bytes/frame, big-endian is supported.
+javax.sound.sampled.AudioSystem.getLine(Unknown Source)
+javax.sound.sampled.AudioSystem.getClip(Unknown Source)
+br.com.roska.threads.SoundThread.run(SoundThread.java:36)
+java.lang.Thread.run(Unknown Source)
+
+
+++java.lang.IllegalArgumentException: No line matching interface Clip supporting format PCM_SIGNED unknown sample rate, 16 bit, stereo, 4 bytes/frame, big-endian is supported.
+javax.sound.sampled.AudioSystem.getLine(Unknown Source)
+javax.sound.sampled.AudioSystem.getClip(Unknown Source)
+br.com.roska.threads.SoundThread.run(SoundThread.java:36)
+java.lang.Thread.run(Unknown Source)
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================
+
+
+===========================
+
+
+sun.awt.Win32GraphicsEnvironment@29f69090   java.io.BufferedInputStream@568bf312
+
+
+===========================

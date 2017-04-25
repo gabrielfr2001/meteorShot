@@ -50,8 +50,9 @@ public class LeaderbordManager {
 
 				for (int i = MAX; i > 0; i--) {
 					try {
-						strsDef[MAX - i] = DEFAULT_FORMAT.replace("NUMBER", Integer.toString(MAX - i + 1))
-								.replace("NOME", map.get(keys[i])).replace("PONTOS", Long.toString(keys[i]));
+						if (map.get(keys[i]) != null)
+							strsDef[MAX - i] = DEFAULT_FORMAT.replace("NUMBER", Integer.toString(MAX - i + 1))
+									.replace("NOME", map.get(keys[i])).replace("PONTOS", Long.toString(keys[i]));
 					} catch (Exception e) {
 						e.printStackTrace();
 					}

@@ -39,7 +39,6 @@ import br.com.roska.screens.Screen;
 import br.com.roska.screens.Tutorial01;
 import br.com.roska.screens.Tutorial02;
 import br.com.roska.threads.HealthKiller;
-import br.com.roska.threads.SoundPlayer;
 import br.com.roska.threads.SoundThread;
 import br.com.roska.threads.Ticker;
 import br.com.roska.util.ImageLoader;
@@ -246,8 +245,12 @@ public class Painter extends JPanel implements KeyListener {
 
 	public static void playSound(String sound, int rep, int sec) {
 		if (playsounds) {
-			Thread t = new Thread(new SoundPlayer(sound, SoundThread.NOREPEAT, 0));
+			SoundThread st = new SoundThread(sound, rep, sec);
+			Thread t = new Thread();
 			t.start();
+			if (sound.equals(Driver.MAIN_MUSIC)) {
+				mainThread = st;
+			}
 		}
 	}
 

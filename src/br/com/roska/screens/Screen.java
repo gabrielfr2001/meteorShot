@@ -44,7 +44,7 @@ public abstract class Screen {
 	public static final String BUTTON_REPETIR = "TENTAR DE NOVO";
 	public static final String BUTTON_LEADERBOARD = "RANKING";
 
-	public static final String VERSION = "V1.7 ESTÁVEL";
+	public static final String VERSION = "V1.8 ESTÁVEL";
 
 	public Screen() {
 		width = Painter.width;
@@ -88,11 +88,17 @@ public abstract class Screen {
 			width0 /= bQ;
 			height0 /= bQ;
 
+			if (width0 == 0) {
+				width0 = BUTTON_WIDTH + BUTTON_BORDER * 2;
+			}
+
 			for (Button b : buttons) {
-				b.y = height / 2 - (height0 * index) + y + height0;
-				b.x = width / 2
-						- (width0 * index + (width0 == 0 ? (BUTTON_WIDTH + BUTTON_MARGIN * 2) / 2 : +width0 * bQ / 2))
-						+ x + width0;
+				b.y = height / 2 + (height0 * bQ) / 2 - (height0 * index) + y;
+				if (b.orientation == Button.RIGHT || b.orientation == Button.LEFT) {
+					b.x = width / 2 - (width0 * bQ) / 2 + (width0 * index) + x;
+				} else {
+					b.x = width / 2 - width0 / 2;
+				}
 				b.paint(p);
 				index++;
 			}

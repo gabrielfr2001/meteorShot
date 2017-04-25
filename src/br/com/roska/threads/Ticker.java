@@ -28,6 +28,8 @@ public class Ticker implements Runnable {
 	public static Boss boss;
 	private static int lastResult;
 	public static List<Threader> removeThreaders = new ArrayList<>();
+	public static boolean startDepreciationBossBattle;
+	public static int depreciationStart;
 
 	@Override
 	public void run() {
@@ -108,6 +110,19 @@ public class Ticker implements Runnable {
 						if (boss != null) {
 							boss.tick();
 						}
+						if (startDepreciationBossBattle) {
+							depreciationStart--;
+							if (depreciationStart <= 0) {
+								onBossBattle = false;
+								startDepreciationBossBattle = false;
+								for (int i = 0; i < Painter.meteors.size(); i++) {
+									if (Painter.meteors.get(i).size == 100) {
+										Painter.meteors.remove(Painter.meteors.get(i));
+									}
+								}
+								boss.canAdd = true;
+							}
+						}
 					} else {
 						boss = null;
 					}
@@ -154,7 +169,8 @@ public class Ticker implements Runnable {
 									Painter.cando = false;
 									Painter.level++;
 									Painter.levelUp = 50;
-									Painter.playSound("levelUp.wav", SoundThread.NOREPEAT, 0);
+									if (Painter.level % 2 == 1)
+										Painter.playSound("levelUp.wav", SoundThread.NOREPEAT, 0);
 
 								}
 					for (int i = 0; i < Painter.meteors.size(); i++) {

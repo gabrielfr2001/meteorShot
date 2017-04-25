@@ -19,12 +19,17 @@ public class SoundThread implements Runnable {
 
 	public SoundThread(String ref, int rep, int sec) {
 		this.ind = ref;
-		this.repeat = rep == 1;
+		this.repeat = rep == REPEAT;
 		this.stop = sec;
 	}
 
 	public void cancel() {
-		clip.stop();
+		try {
+			clip.stop();
+		} catch (Exception e) {
+
+		}
+		repeat = false;
 	}
 
 	public void run() {
