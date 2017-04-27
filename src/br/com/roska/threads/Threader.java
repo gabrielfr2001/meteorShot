@@ -24,7 +24,7 @@ public class Threader implements Runnable {
 	}
 
 	@Override
-	public void run() {
+	public synchronized void run() {
 		List<Meteor> meteors = Painter.meteors;
 
 		meteors.remove(m);
@@ -40,6 +40,8 @@ public class Threader implements Runnable {
 		if (Painter.meteors.size() > 0) {
 			Ticker.atualize = true;
 		}
+		
+		m.bossActive = false;
 
 		if (i == KILL) {
 			m.destroyType = TYPE;

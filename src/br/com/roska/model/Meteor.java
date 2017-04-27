@@ -45,6 +45,7 @@ public class Meteor {
 	public int targetX;
 	public int targetY;
 	public int life;
+	public boolean bossActive;
 
 	public Meteor(double x, double y, String stat, double size) {
 		this.x = x;

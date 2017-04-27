@@ -9,6 +9,8 @@ import java.net.URL;
 
 import javax.swing.ImageIcon;
 
+import br.com.roska.main.Painter;
+
 public class ImageUtil {
 	private Image image;
 
@@ -107,6 +109,7 @@ public class ImageUtil {
 			image = new ImageIcon(url).getImage();
 		} catch (Exception e) {
 			e.printStackTrace();
+			Painter.logger.log(e);
 		}
 		return image;
 	}

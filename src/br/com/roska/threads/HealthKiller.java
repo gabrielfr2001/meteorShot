@@ -13,7 +13,7 @@ public class HealthKiller implements Runnable {
 	}
 
 	@Override
-	public void run() {
+	public synchronized void run() {
 		for (int o = 0; o < i / decrement; o++) {
 			Painter.health -= decrement;
 			try {

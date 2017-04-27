@@ -43,23 +43,31 @@ public class Boss {
 	private boolean died;
 	private boolean dieOnce;
 	public boolean canAdd;
+	private double acc = 0.1;
 
 	public Boss() {
 		this.r = new Random();
 		onceEver = true;
-		Painter.playSound("boss_battle0.wav", SoundThread.NOREPEAT, 0);
-
+		
 		if (Painter.mainThread != null) {
 			Painter.mainThread.cancel();
 		}
+
+		Painter.playSound("boss_battle0.wav", SoundThread.NOREPEAT, 0);
 
 		health = HEALTH;
 	}
 
 	public void tick() {
+		if (died) {
+			vy += acc;
+		}
 		y += vy;
 		x += vx;
-		vy = health > 3000 ? VELY : BOSSGAIN * VELY;
+
+		if (!died) {
+			vy = health > 3000 ? VELY : BOSSGAIN * VELY;
+		}
 
 		int state = health > 3000 ? 150 : 50;
 
@@ -103,7 +111,7 @@ public class Boss {
 				Painter.playSound(Driver.MAIN_MUSIC, SoundThread.REPEAT, Driver.MAIN_MUSIC_LOOP_TIME);
 
 				Ticker.startDepreciationBossBattle = true;
-				Ticker.depreciationStart = 300;
+				Ticker.depreciationStart = 500;
 
 				died = true;
 				if (!dieOnce) {
@@ -112,7 +120,6 @@ public class Boss {
 				}
 			}
 		} else {
-			vy = -VELY * 10;
 
 		}
 		tick++;
@@ -165,61 +172,70 @@ public class Boss {
 
 	public void add(boolean loss) {
 		if (!died && !canAdd) {
-			if (loss)
-				health -= HEALTH_LOSS;
+			int actives = 0;
 
-			lastAdd = tick;
-			String statement = "";
-
-			int n1 = 0, n2 = 0;
-
-			if (Painter.adultMode) {
-				n1 = r.nextInt(Painter.level + 1) + 1;
-				n2 = r.nextInt(Painter.level + 1) + 1;
-			} else {
-				int value = r.nextInt(10) + 1;
-				n1 = value > 10 ? 10 : value;
-				value = r.nextInt(10) + 1;
-				n2 = value > 10 ? 10 : value;
-			}
-
-			statement = n1 + " x " + n2;
-
-			int size = (int) 100;
-			Meteor meteor = null;
-
-			for (;;) {
-				try {
-					meteor = new Meteor(x, y, statement, size);
-					break;
-				} catch (Exception e) {
-					e.printStackTrace();
-					Painter.logger.log(e);
+			for (Meteor m : Painter.meteors) {
+				if (m.bossActive) {
+					actives++;
 				}
 			}
-			meteor.n1 = n1;
-			meteor.n2 = n2;
+			if (actives < 2) {
+				if (loss)
+					health -= HEALTH_LOSS;
 
-			Painter.imageUtil.setImage(Meteor.IMAGE);
-			meteor.image = Painter.imageUtil.resize(size, size);
+				lastAdd = tick;
+				String statement = "";
 
-			meteor.speed = (Math.random() * 0.2 + 0.3);
-			meteor.vy = -1;
-			meteor.appendRotation = Math.random() - Math.random();
-			Painter.add = false;
+				int n1 = 0, n2 = 0;
 
-			List<Meteor> meteors = new ArrayList<Meteor>();
-			meteors.add(meteor);
+				if (Painter.adultMode) {
+					n1 = r.nextInt(Painter.level + 1) + 1;
+					n2 = r.nextInt(Painter.level + 1) + 1;
+				} else {
+					int value = r.nextInt(10) + 1;
+					n1 = value > 10 ? 10 : value;
+					value = r.nextInt(10) + 1;
+					n2 = value > 10 ? 10 : value;
+				}
 
-			for (int i = 0; i < Painter.meteors.size(); i++) {
-				Meteor m = Painter.meteors.get(i);
-				meteors.add(m);
+				statement = n1 + " x " + n2;
+
+				int size = (int) 100;
+				Meteor meteor = null;
+
+				for (;;) {
+					try {
+						meteor = new Meteor(x, y, statement, size);
+						break;
+					} catch (Exception e) {
+						e.printStackTrace();
+						Painter.logger.log(e);
+					}
+				}
+				meteor.n1 = n1;
+				meteor.n2 = n2;
+				meteor.bossActive = true;
+				Painter.imageUtil.setImage(Meteor.IMAGE);
+				meteor.image = Painter.imageUtil.resize(size, size);
+
+				meteor.speed = (Math.random() * 0.2 + 0.3);
+				meteor.vy = -1;
+				meteor.appendRotation = Math.random() - Math.random();
+				Painter.add = false;
+
+				List<Meteor> meteors = new ArrayList<Meteor>();
+				meteors.add(meteor);
+
+				for (int i = 0; i < Painter.meteors.size(); i++) {
+					Meteor m = Painter.meteors.get(i);
+					meteors.add(m);
+				}
+
+				Painter.meteors = meteors;
+				Painter.actualize = true;
+				Ticker.atualize = true;
+				Ticker.refactoryMeteor();
 			}
-
-			Painter.meteors = meteors;
-			Painter.actualize = true;
-			Ticker.atualize = true;
-			Ticker.refactoryMeteor();
 		}
 	}
 }

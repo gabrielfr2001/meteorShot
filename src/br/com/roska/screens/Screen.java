@@ -44,7 +44,7 @@ public abstract class Screen {
 	public static final String BUTTON_REPETIR = "TENTAR DE NOVO";
 	public static final String BUTTON_LEADERBOARD = "RANKING";
 
-	public static final String VERSION = "V1.8 ESTÁVEL";
+	public static final String VERSION = "V2.1";
 
 	public Screen() {
 		width = Painter.width;
@@ -65,7 +65,7 @@ public abstract class Screen {
 
 		Painter.paintBackground(p);
 		p.setColor(Color.WHITE);
-		p.drawString("SPACE DEFENDER TABUADA " + VERSION, 10, p.getFont().getSize() + 20);
+		p.drawString("Tabuada Espacial " + VERSION, 10, p.getFont().getSize() + 20);
 
 		if (buttons.size() > 0) {
 			int index = 0;
@@ -107,6 +107,7 @@ public abstract class Screen {
 			Thread.sleep(1000 / Painter.FPS);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
+			Painter.logger.log(e);
 		}
 	}
 }

@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+import br.com.roska.util.Logger;
+
 public class ConfigurationManager {
 	public static final String s = File.separator;
 	public static final String PATH = "";
@@ -33,10 +35,12 @@ public class ConfigurationManager {
 				fr.close();
 			} catch (IOException e) {
 				e.printStackTrace();
+				Painter.logger.log(e);
 			}
 
 		} catch (IOException e) {
 			e.printStackTrace();
+			Painter.logger.log(e);
 		}
 		return str;
 	}
@@ -53,6 +57,9 @@ public class ConfigurationManager {
 					switch (a) {
 					case "play_sound":
 						Painter.playsounds = b(s);
+						break;
+					case "log":
+						Logger.log = b(s);
 						break;
 					default:
 						break;

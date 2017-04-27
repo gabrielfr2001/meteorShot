@@ -1,5 +1,8 @@
 package br.com.roska.main;
 
+import java.awt.Insets;
+import java.awt.Rectangle;
+
 import javax.swing.JFrame;
 
 import br.com.roska.listener.MouseListener;
@@ -8,7 +11,7 @@ import br.com.roska.threads.SoundThread;
 
 public class Driver {
 
-	private static final String WINDOW_NAME = "Omega Space Defender (OSD)";
+	private static final String WINDOW_NAME = "Tabuada Espacial";
 	public static final String MAIN_MUSIC = "arcade_music.wav";
 	public static final int MAIN_MUSIC_LOOP_TIME = 34;
 	private static final int HEIGHT = 768;
@@ -20,6 +23,12 @@ public class Driver {
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(WIDTH, HEIGHT);
+		Insets screenInsets = frame.getToolkit().getScreenInsets(frame.getGraphicsConfiguration());
+		Rectangle screenSize = frame.getGraphicsConfiguration().getBounds();
+		Rectangle maxBounds = new Rectangle(screenInsets.left + screenSize.x, screenInsets.top + screenSize.y,
+				screenSize.x + screenSize.width - screenInsets.right - screenInsets.left,
+				screenSize.y + screenSize.height - screenInsets.bottom - screenInsets.top);
+		frame.setMaximizedBounds(maxBounds);
 		frame.setExtendedState(frame.getExtendedState() | JFrame.MAXIMIZED_BOTH);
 
 		frame.setVisible(true);
@@ -28,6 +37,7 @@ public class Driver {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
+			Painter.logger.log(e);
 		}
 
 		Painter painter = new Painter(frame);

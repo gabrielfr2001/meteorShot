@@ -1,13 +1,17 @@
 package br.com.roska.main;
 
 import java.awt.Graphics2D;
+import java.awt.Rectangle;
 
 import br.com.roska.model.Button;
 import br.com.roska.screens.Screen;
 
 public class Menu extends Screen {
 
+	private static Rectangle bounds = new Rectangle(0, Painter.height / 3, Painter.width, Painter.height / 3 * 2);
+
 	public Menu() {
+		super(bounds);
 		Button menuButtonQuit = new Button(Painter.width / 2 - BUTTON_WIDTH / 2, 0, BUTTON_WIDTH, BUTTON_HEIGTH,
 				BUTTON_QUIT, MENU_BUTTON_QUIT);
 		menuButtonQuit.margin = BUTTON_BORDER;
@@ -37,6 +41,8 @@ public class Menu extends Screen {
 
 	public void paint(Graphics2D p, Painter painter) {
 		super.paint(p);
+
+		p.drawImage(Painter.LOGO, Painter.width / 2 - Painter.LOGO.getWidth(null) / 2, Painter.height / 6, null);
 	}
 
 }

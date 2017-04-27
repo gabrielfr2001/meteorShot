@@ -9,12 +9,20 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
 
+import br.com.roska.util.Criptographer;
+
 public class LeaderbordManager {
 	public static final String s = File.separator;
 	public static final String PATH = "";
 	public static final String FILE = "leaderboard.txt";
 	public static final String DEFAULT_FORMAT = "NUMBER° - NOME, PONTOS pontos";
 	private static final int MAX = 5;
+	private static final String SEED = "42";
+	private Criptographer criptographer;
+
+	public LeaderbordManager() {
+		criptographer = new Criptographer(SEED);
+	}
 
 	public void register(String nome, long pontos) {
 		try {
@@ -29,14 +37,17 @@ public class LeaderbordManager {
 
 				for (int i = 0; i < strs.length; i++) {
 
-					String[] parts = strs[i].split("- ");
-					String[] parts0 = parts[1].split(", ");
-					parts0[1] = parts0[1].replace(" pontos", "");
+					try {
+						String[] parts = strs[i].split("- ");
+						String[] parts0 = parts[1].split(", ");
+						parts0[1] = parts0[1].replace(" pontos", "");
 
-					map.put(Long.parseLong(parts0[1]), parts0[0]);
+						map.put(Long.parseLong(parts0[1]), parts0[0]);
 
-					keys[i] = Long.parseLong(parts0[1]);
+						keys[i] = Long.parseLong(parts0[1]);
+					} catch (Exception e) {
 
+					}
 				}
 
 				Arrays.sort(keys);
@@ -55,6 +66,7 @@ public class LeaderbordManager {
 									.replace("NOME", map.get(keys[i])).replace("PONTOS", Long.toString(keys[i]));
 					} catch (Exception e) {
 						e.printStackTrace();
+						Painter.logger.log(e);
 					}
 				}
 			} else {
@@ -75,12 +87,18 @@ public class LeaderbordManager {
 				}
 			}
 
-			BufferedWriter out = new BufferedWriter(new FileWriter(PATH + FILE));
-			out.write(str);
-			out.close();
-		} catch (IOException e) {
+			save(str);
+		} catch (Exception e) {
 			e.printStackTrace();
+			Painter.logger.log(e);
 		}
+	}
+
+	private void save(String str) throws IOException {
+		BufferedWriter out = new BufferedWriter(new FileWriter(PATH + FILE));
+		str = criptographer.encripto(str);
+		out.write(str);
+		out.close();
 	}
 
 	public String[] getRanking() {
@@ -112,6 +130,7 @@ public class LeaderbordManager {
 					fr.close();
 				} catch (IOException e) {
 					e.printStackTrace();
+					Painter.logger.log(e);
 				}
 
 			} else {
@@ -119,7 +138,8 @@ public class LeaderbordManager {
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
+			Painter.logger.log(e);
 		}
-		return str;
+		return criptographer.decripto(str);
 	}
 }

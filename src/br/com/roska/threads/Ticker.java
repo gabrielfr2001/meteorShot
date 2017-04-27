@@ -32,12 +32,12 @@ public class Ticker implements Runnable {
 	public static int depreciationStart;
 
 	@Override
-	public void run() {
+	public synchronized void run() {
 
 		Random r = new Random();
 
 		for (;;) {
-			if (!Painter.GAMEOVER) {
+			if (!Painter.GAMEOVER && Painter.popup != Painter.popupExit) {
 
 				for (int i = 0; i < threadsToRemove.size(); i++) {
 					Painter.threads.remove(threadsToRemove.get(i));
@@ -188,50 +188,62 @@ public class Ticker implements Runnable {
 									}
 								}
 							} catch (Exception e) {
-
+								Painter.logger.log(e);
 							}
-							if (m.particles.size() < 200 && m.canadParticle) {
-								for (int e = 0; e < 3; e++) {
-									Particle p = new Particle();
-									p.x = m.x + m.size - 5 + Math.random() * m.size / 3 - Math.random() * m.size / 3;
-									p.y = m.y + m.size + Math.random() * m.size / 3 - Math.random() * m.size / 2;
-									p.active = true;
-									p.spreadness = 2;
-									p.vy = -m.vy;
-									p.vx = -m.vx;
-									p.size = 30;
-									p.sizeDecay = 0.5;
-									p.c = m.particleColor;
-									p.life = 70;
-									p.rotateness = 10;
-									m.particles.add(p);
-									Painter.particles++;
+							try {
+								if (m.particles.size() < 200 && m.canadParticle) {
+									for (int e = 0; e < 3; e++) {
+										Particle p = new Particle();
+										p.x = m.x + m.size - 5 + Math.random() * m.size / 3
+												- Math.random() * m.size / 3;
+										p.y = m.y + m.size + Math.random() * m.size / 3 - Math.random() * m.size / 2;
+										p.active = true;
+										p.spreadness = 2;
+										p.vy = -m.vy;
+										p.vx = -m.vx;
+										p.size = 30;
+										p.sizeDecay = 0.5;
+										p.c = m.particleColor;
+										p.life = 70;
+										p.rotateness = 10;
+										m.particles.add(p);
+										Painter.particles++;
+									}
 								}
+							} catch (Exception e) {
+								Painter.logger.log(e);
 							}
-							if (m.y > Painter.height - m.size - 240 && !m.inactive) {
-								Thread thread = new Thread(new Threader(m, Threader.EXPLODE));
-								Painter.threads.add(thread);
-								thread.start();
-								Painter.errou = 10;
-								Painter.pressedDisp = "";
-								Painter.pressed = "";
-								Thread t = new Thread(new HealthKiller(1000, 20));
-								t.start();
-								Painter.threads.add(t);
-							}
-							double angle = Maths.getAngle(new Point((int) m.x, (int) m.y),
-									new Point((int) (Painter.width / 2 - m.size), (int) (Painter.height * 1.5)));
-							double decaimentGrade = 1;
-							if (m.notMoving) {
-								decaimentGrade = 0.1;
-							}
+							try {
+								if (m != null) {
+									if (m.y > Painter.height - m.size - 240 && !m.inactive) {
+										Thread thread = new Thread(new Threader(m, Threader.EXPLODE));
+										Painter.threads.add(thread);
+										thread.start();
+										Painter.errou = 10;
+										Painter.pressedDisp = "";
+										Painter.pressed = "";
+										Thread t = new Thread(new HealthKiller(1000, 20));
+										t.start();
+										Painter.threads.add(t);
+									}
 
-							double level = Painter.level / (40f + Math.sqrt(Painter.level));
+									double angle = Maths.getAngle(new Point((int) m.x, (int) m.y), new Point(
+											(int) (Painter.width / 2 - m.size), (int) (Painter.height * 1.5)));
+									double decaimentGrade = 1;
+									if (m.notMoving) {
+										decaimentGrade = 0.1;
+									}
 
-							m.vx = Math.cos(angle) * (level + 0.5) * m.speed;
-							m.x += m.vx * decaimentGrade;
-							m.vy = Math.sin(angle) * (level + 0.5) * m.speed;
-							m.y += m.vy * decaimentGrade;
+									double level = Painter.level / (40f + Math.sqrt(Painter.level));
+
+									m.vx = Math.cos(angle) * (level + 0.5) * m.speed;
+									m.x += m.vx * decaimentGrade;
+									m.vy = Math.sin(angle) * (level + 0.5) * m.speed;
+									m.y += m.vy * decaimentGrade;
+								}
+							} catch (Exception e) {
+								Painter.logger.log(e);
+							}
 						}
 					}
 					if (Painter.BOT && frames % BOT_SPEED == 0) {
@@ -303,6 +315,7 @@ public class Ticker implements Runnable {
 								}
 							} catch (Exception e) {
 								e.printStackTrace();
+								Painter.logger.log(e);
 							}
 						}
 
@@ -322,6 +335,7 @@ public class Ticker implements Runnable {
 				Thread.sleep(STEP);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
+				Painter.logger.log(e);
 			}
 		}
 	}
@@ -416,12 +430,15 @@ public class Ticker implements Runnable {
 
 	public static void doGameOver() {
 		Painter.GAMEOVER = true;
+
 		Painter.currentScreen = Painter.gameover;
 		Painter.screen = Painter.SCREEN_GAMEOVER;
 		Painter.threads.set(Painter.soundIndex, null);
+
 		if (Painter.mainThread != null) {
 			Painter.mainThread.cancel();
 		}
+
 		Painter.playSound("game_over.wav", SoundThread.NOREPEAT, 0);
 		Painter.stopado = true;
 

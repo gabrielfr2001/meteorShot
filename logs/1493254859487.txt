@@ -1,0 +1,15 @@
+########-JAVA ROSCA LOGGER-########
+26/04/2017 22:00:59.497
+Contate o suporte caso você esteja vendo esta mensagem - gabrielfroskowski2001@gmail.com
+
+
+localized message - Index: 196, Size: 195
+message - Index: 196, Size: 195
+cause - null
+IndexOutOfBoundsException
+java.util.ArrayList.rangeCheck(Unknown Source)
+java.util.ArrayList.get(Unknown Source)
+br.com.roska.threads.Ticker.run(Ticker.java:310)
+java.lang.Thread.run(Unknown Source)
+
+########-JAVA ROSCA LOGGER-########
